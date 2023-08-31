@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Key": {
+      "displayOrder": 2,
+      "title": "Object name",
+      "description": "Name of the object",
+      "display": {
+        "nameProperty": true
+      },
+      "type": "string"
+    }
+  },
+  "title": "object",
+  "additionalProperties": false
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Key": {
+      "displayOrder": 2,
+      "title": "Object name",
+      "description": "Name of the object",
+      "display": {
+        "nameProperty": true
+      },
+      "type": "string"
+    },
+    "ContentType": {
+      "displayOrder": 7,
+      "title": "Content type",
+      "description": "For text, set to text/plain or add '; charset=utf-8' (for example, application/xml; charset=utf-8). For other content, set to the type, like image/png, and provide Object content as base64-encoded data.",
+      "enum": [
+        "application/msword",
+        "application/pdf",
+        "application/vnd.android.package-archive",
+        "application/x-compressed",
+        "application/x-gzip",
+        "application/zip",
+        "audio/mpeg",
+        "binary/octet-stream",
+        "image/bmp",
+        "image/gif",
+        "image/jpeg",
+        "image/png",
+        "image/svg+xml",
+        "image/tiff",
+        "text/plain",
+        "text/rtf"
+      ],
+      "type": "string"
+    },
+    "content": {
+      "displayOrder": 9,
+      "title": "Object content",
+      "description": "The data stored for the object. If Content type is text/plain or contains charset=utf-8 (for example, application/xml; charset=utf-8), this content is treated as text. Otherwise, this content must be base64-encoded data.",
+      "type": "string"
+    }
+  },
+  "title": "object",
+  "required": [
+    "Key"
+  ],
+  "additionalProperties": false,
+  "connectorName": "amazons3",
+  "interaction": "CREATE"
+}
