@@ -52,7 +52,7 @@ mqsivault NODE1 --destroy
 #Below result from command
 
 mqsicredentials --help
-
+"
  The properties that are required for each credential vary depending on credential type. The list below shows the properties that are needed for each credential type:
 
 amazoncloudwatch: --secret-access-key <arg> --access-key-id <arg>
@@ -160,4 +160,4 @@ wxs: --username <arg> --password <arg>
 zendeskservice: --auth-type basicClientId --username <arg> --password <arg> --client-id <arg> --client-secret <arg>
 zendeskservice: --auth-type basic --username <arg> --password <arg>
 zendeskservice: --auth-type accessToken --access-token <arg>
-zendeskservice: --auth-type usernameApiKey --username <arg> --api-key <arg>
+zendeskservice: --auth-type usernameApiKey --username <arg> --api-key <arg>"
